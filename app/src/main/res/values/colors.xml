@@ -11,4 +11,5 @@
     <color name="colorblanco">#FFFFFF</color>
     <color name="colorborder">#848484</color>
     <color name="coloramarillo">#ffea00</color>
+    <color name="colornegro">#000000</color>
 </resources>
