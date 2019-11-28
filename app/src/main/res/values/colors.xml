@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorScreen">#C5D4D1</color>
+    <color name="colorPieAcces">#8596A0</color>
+    <color name="colorPieHelp">#CC555C</color>
+    <color name="colorAzul">#0059A5</color>
+    <color name="colorguion">#BA0D18</color>
+    <color name="colorblanco">#FFFFFF</color>
+    <color name="colorborder">#848484</color>
+    <color name="coloramarillo">#ffea00</color>
+</resources>

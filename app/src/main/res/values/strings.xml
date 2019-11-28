@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InfoCSEG</string>
+    <string name="textoaccede">ACCEDE</string>
+    <string name="textoa">A</string>
+    <string name="textotucuenta">TU CUENTA</string>
+    <string name="soporte">Para mayor soporte al Cel: 942660672</string>
+    <string name="users">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="textoingreso">INGRESAR</string>
+</resources>

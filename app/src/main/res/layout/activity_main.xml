@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreen"
+    tools:context=".activity.main.MainActivity"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="281dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_gravity="center"
+            android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/vwAccede"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/textoaccede"
+                android:textColor="@color/colorAzul"
+                android:textSize="32sp"
+                android:shadowColor="#A5A5A5"
+                android:shadowRadius="5"
+                android:shadowDx="2"
+                android:shadowDy="5"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/guionleft"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:text=""
+                    android:background="@color/colorguion"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/vwaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/textoa"
+                    android:textColor="@color/colorAzul"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:shadowColor="#A5A5A5"
+                    android:shadowRadius="5"
+                    android:shadowDx="2"
+                    android:shadowDy="5"/>
+
+                <TextView
+                    android:id="@+id/guionrigth"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:text=""
+                    android:background="@color/colorguion"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vwtucuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/textotucuenta"
+                android:textColor="@color/colorAzul"
+                android:textSize="24sp"
+                android:shadowColor="#A5A5A5"
+                android:shadowRadius="5"
+                android:shadowDx="2"
+                android:shadowDy="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/lblusers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/users"
+                android:textColor="@color/colorAzul"
+                android:textSize="24sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/txtusuario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="5dip"
+                android:inputType="text"
+                android:shadowColor="#A5A5A5"
+                android:shadowRadius="5"
+                android:shadowDx="2"
+                android:shadowDy="5"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/lblpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass"
+                android:textColor="@color/colorAzul"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="5dip"
+                android:inputType="textPassword"
+                android:shadowColor="#A5A5A5"
+                android:shadowRadius="5"
+                android:shadowDx="2"
+                android:shadowDy="5"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/btnacceder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textoingreso"
+                android:textColor="@color/colorblanco"
+                android:background="@drawable/estiloboton"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPieAcces"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/coloramarillo"
+                android:text="Acceder" />
+
+            <TextView
+                android:id="@+id/crearcuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/colorblanco"
+                android:text="Crear Cuenta" />
+
+            <TextView
+                android:id="@+id/olvide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/colorblanco"
+                android:text="Olvide Clave" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/colorPieHelp"
+            android:gravity="bottom"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="@string/soporte"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
