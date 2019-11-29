@@ -14,13 +14,13 @@ public class PrincipalActivity extends AppCompatActivity {
     GridView androidGridView;
 
     String[] gridViewString = {
-            "Alram", "Android", "Mobile", "Website", "Profile", "WordPress",
+            "User", "Android", "Mobile", "Website", "Profile", "WordPress",
             "Alram", "Android", "Mobile", "Website", "Profile", "WordPress",
             "Alram", "Android", "Mobile", "Website", "Profile", "WordPress",
 
     } ;
     int[] gridViewImageId = {
-            R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre,
+            R.drawable.usuario, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre,
             R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre,
             R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre, R.drawable.cierre,
 
@@ -39,7 +39,7 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
-                Toast.makeText(PrincipalActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
+                Toast.makeText(PrincipalActivity.this, "GridView Item: "+i+" - " + gridViewString[+i], Toast.LENGTH_LONG).show();
             }
         });
 
