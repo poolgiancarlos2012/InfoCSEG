@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClientMySQL {
 
-    public static final String BASE_URL = "http://192.168.1.63:8080/WebService/MySQL/SQL/";
+    public static final String BASE_URL = "http://191.98.186.82:8080/WebService/MySQL/SQL/";
     private static Retrofit retrofit;
 
     public static Retrofit getApiClient() {

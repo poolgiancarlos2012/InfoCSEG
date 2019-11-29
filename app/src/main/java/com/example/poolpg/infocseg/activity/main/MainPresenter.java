@@ -34,7 +34,7 @@ public class MainPresenter {
                     Boolean success = response.body().getSuccess();
 
                     if (success){
-                        view.onRequestSuccess(response.body().getDni());
+                        view.onRequestSuccess(response.body().getMessage());
                     } else {
                         view.onRequestError(response.body().getMessage());
                     }
