@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.poolpg.infocseg.R;
+import com.example.poolpg.infocseg.activity.Gestion.GestionActivity;
 
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +13,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.graphics.Typeface;
+import android.content.Intent;
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -67,9 +69,15 @@ public class PrincipalActivity extends AppCompatActivity {
         androidGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int i, long id) {
-                Toast.makeText(PrincipalActivity.this, "GridView Item: "+i+" - " + gridViewString[+i], Toast.LENGTH_LONG).show();
+            public void onItemClick(AdapterView<?> parent, View view,int i, long id) {
+                //Toast.makeText(PrincipalActivity.this, "GridView Item: "+i+" - " + gridViewString[+i], Toast.LENGTH_LONG).show();
+
+                if(i == 8){ // Gestion
+                    Intent AbrirGestion = new Intent(PrincipalActivity.this,GestionActivity.class);
+                    startActivity(AbrirGestion);
+                    finish();
+                }
+
             }
         });
 

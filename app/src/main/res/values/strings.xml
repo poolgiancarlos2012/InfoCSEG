@@ -8,4 +8,5 @@
     <string name="pass">Contraseña</string>
     <string name="textoingreso">INGRESAR</string>
     <string name="tituloprincipal">Principal</string>
+    <string name="tituloconsulgestion">Consultar \n Gestion</string>
 </resources>
