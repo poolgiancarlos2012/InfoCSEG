@@ -16,46 +16,59 @@
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:background="@color/colorPieAcces"
-        android:gravity="top"
-        >
-
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/ic_atras"
-            android:layout_gravity="center_vertical"
-            android:contentDescription="TODO" />
-
-        <TextView
-            android:id="@+id/lblbackprincipal"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tituloprincipal"
-            android:textColor="@color/colorplomo"
-            android:textSize="18sp"
-            />
-
-        <TextView
-            android:id="@+id/ConsultaGestion"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tituloconsulgestion"
-            android:textColor="@color/colornegro"
-            android:textSize="20sp"
-
-            />
+        android:layout_gravity="top">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="right"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_atras"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/lblbackprincipal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloprincipal"
+                android:textColor="@color/colorplomo"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/ConsultaGestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloconsulgestion"
+                android:textColor="@color/colornegro"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
             android:paddingRight="5dp"
-            >
+            android:layout_weight="2">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,7 +103,7 @@
                 >
                 <TextView
                     android:id="@+id/guionrigth"
-                    android:layout_width="10dp"
+                    android:layout_width="5dp"
                     android:layout_height="2dp"
                     android:text=""
                     android:layout_marginLeft="5dp"
@@ -126,10 +139,75 @@
 
             </LinearLayout>
 
+
         </LinearLayout>
 
+    </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@color/colorPieAcces"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnregistrar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Registrar"
+                android:textColor="@color/colorblanco"
+                android:background="@drawable/estiloboton"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnrecorrido"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Recorrido"
+                android:textColor="@color/colorblanco"
+                android:background="@drawable/estiloboton"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnexportar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Exportar"
+                android:textColor="@color/colorblanco"
+                android:background="@drawable/estiloboton"
+                android:textSize="15sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
